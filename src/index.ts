@@ -19,7 +19,7 @@ const app = new Elysia()
 			prefix: "/",
 		}),
 	)
-	.use(replitKVPlugin(process.env.REPLIT_DB_URL!, { prefix: "kv" }))
+	.use(replitKVPlugin(process.env.REPLIT_DB_URL, { prefix: "kv" }))
 	.get("/", async () => JSON.stringify(Bun.env, null, 2))
 	.listen({
 		hostname: "0.0.0.0",
