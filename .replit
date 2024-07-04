@@ -1,0 +1,13 @@
+run = "just"
+entrypoint = "src/index.ts"
+modules = ["typescript-language-server", "nodejs-20", "nix"]
+
+[nix]
+channel = "stable-24_05"
+
+[[ports]]
+localPort = 3000
+externalPort = 80
+
+[objectStorage]
+defaultBucketID = "replit-objstore-28b17f5f-61ff-4167-9456-37705a391c31"

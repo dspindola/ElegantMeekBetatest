@@ -1,0 +1,20 @@
+{
+  "name": "elegantmeekbetatest",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^1.0.2",
+    "@elysiajs/static": "^1.0.3",
+    "@elysiajs/swagger": "^1.0.5",
+    "@replit/database": "^3.0.1",
+    "@replit/object-storage": "^1.0.0",
+    "db0": "^0.1.4",
+    "elysia": "^1.0.27"
+  }
+}
